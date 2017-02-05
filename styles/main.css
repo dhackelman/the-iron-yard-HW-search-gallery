@@ -1,0 +1,137 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  max-with: 100%; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+body {
+  color: #1E88E5;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 2;
+  margin: 1% auto; }
+  body h1 {
+    text-align: center;
+    font-size: 2rem; }
+
+main {
+  color: #afafaf;
+  overflow: hidden;
+  width: 100%; }
+
+.form-holder {
+  background: transparent;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: 50px auto 20px;
+  width: 100%; }
+  .form-holder .searchImagesForm {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 50%; }
+  .form-holder input {
+    align-self: center;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid #1E88E5;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%; }
+  .form-holder button {
+    border: 0.5px solid black;
+    background: transparent;
+    margin: 10px auto;
+    text-align: center; }
+
+.listSearchItems {
+  color: #000;
+  margin: 5px 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%; }
+  .listSearchItems p {
+    min-height: 50px;
+    text-align: center;
+    width: 100%; }
+
+.listSearchItems img {
+  border: 25px solid;
+  border-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  margin: 15px;
+  height: 300px;
+  width: auto; }
+
+.lightbox {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  float: left;
+  width: 100vw;
+  z-index: 100; }
+
+.is-hidden {
+  display: none; }
+
+.is-showing {
+  display: inline; }
+
+body {
+  background-color: #ecf0f1;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png"); }
+
+/*# sourceMappingURL=main.css.map */

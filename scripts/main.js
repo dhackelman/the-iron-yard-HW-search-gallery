@@ -54,7 +54,7 @@ const runImageModule = function () {
       }
     }
 
-    http.open('GET', `http://www.splashbase.co/api/v1/images/search?query="${searchTerm}"`, true); //will need to update URL to show items based on search term from field
+    http.open('GET', `https://www.splashbase.co/api/v1/images/search?query="${searchTerm}"`, true); //will need to update URL to show items based on search term from field
     http.send();
   }
 
@@ -95,4 +95,4 @@ searchForm.addEventListener('submit', () => {
     searchTerm = document.getElementById('search-term').value;
     searchImageApp.init();
     searchForm.reset();
-  })
+  });

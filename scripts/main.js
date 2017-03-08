@@ -44,17 +44,18 @@ const runImageModule = function () {
 
     http.onreadystatechange = function() {
       if(http.readyState === 4 && http.status ===200) {
-        const searchResultData = JSON.parse(http.response);//returns object.images[array of 10]
-        const resultImages = searchResultData.images;
-        //bind event listeners to create lightbox and dispaly large image
-        //display images in my html listeners
-        updateSearchItemArray(resultImages);//load image objects with ids, large url and reg url to array
-        console.log(allSearchItems);//make sure array exists
-        addImagesToDisplay(allSearchItems);//display each item in the array as list item
+        console.log(http);
+        // const searchResultData = JSON.parse(http.response);//returns object.images[array of 10]
+        // const resultImages = searchResultData.images;
+        // //bind event listeners to create lightbox and dispaly large image
+        // //display images in my html listeners
+        // updateSearchItemArray(resultImages);//load image objects with ids, large url and reg url to array
+        // console.log(allSearchItems);//make sure array exists
+        // addImagesToDisplay(allSearchItems);//display each item in the array as list item
       }
     }
 
-    http.open('GET', `https://www.splashbase.co/api/v1/images/search?query="${searchTerm}"/`, true); //will need to update URL to show items based on search term from field
+    http.open('GET', `https://www.splashbase.co/api/v1/images/search?query="${searchTerm}"`, true); //will need to update URL to show items based on search term from field
     http.send();
   }
 
